@@ -3,6 +3,7 @@ import CartView from "../../views/CartView.vue";
 import HomeView from "../../views/HomeView.vue";
 import RestaurantView from "../../views/RestaurantView.vue";
 import LoginView from "../../views/LoginView.vue";
+import SignInView from "../../views/SignInView.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -25,7 +26,13 @@ const router = createRouter({
         {
             path: '/login',
             name: 'login',
-            component: LoginView
+            component: LoginView,
+        },
+
+        {
+            path: '/signin',
+            name: 'signin',
+            component: SignInView
         }
     ]
 })
