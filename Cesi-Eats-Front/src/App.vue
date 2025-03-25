@@ -4,9 +4,13 @@
 <template>
   <div class="app">
     <nav class="navbar">
+
+      <h1>CESI Eats</h1>
       <router-link to="/" class="nav-link">Accueil</router-link>
       <router-link to="/restaurants" class="nav-link">Restaurants</router-link>
       <router-link to="/cart" class="nav-link">Panier</router-link>
+      <router-link to="/login" class="nav-link">Se connecter</router-link>
+
     </nav>
     <main>
       <router-view></router-view>
@@ -15,6 +19,11 @@
 </template>
 
 <style scoped>
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -33,15 +42,14 @@
  }
 
 .navbar {
-  background-color: #2c3e50;
   padding: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 2rem;
 }
 
 .nav-link {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -55,7 +63,7 @@
 }
 
 .nav-link.router-link-active {
-  background-color: #42b983;
+  background-color: #FA8231;
 }
 
 .main {

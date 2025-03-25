@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  $END$
+<p>Vue 4</p>
 </template>
 
 <style scoped>

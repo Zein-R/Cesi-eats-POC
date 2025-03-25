@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <p> Vue 2</p>
+  <p> Vue 3</p>
 </template>
 
 <style scoped>
