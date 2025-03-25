@@ -9,8 +9,7 @@
         <router-link to="/" class="nav-link">Accueil</router-link>
         <router-link to="/restaurants" class="nav-link">Restaurants</router-link>
         <router-link to="/cart" class="nav-link">Panier</router-link>
-        <router-link to="/login" class="nav-link">Se connecter</router-link>
-
+        <router-link to="/login" class="nav-link ml-auto">Se connecter</router-link>
       </div>
     </div>
     <main>
