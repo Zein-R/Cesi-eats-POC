@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="app">
+    <nav class="navbar">
+      <router-link to="/" class="nav-link">Accueil</router-link>
+      <router-link to="/restaurants" class="nav-link">Restaurants</router-link>
+      <router-link to="/cart" class="nav-link">Panier</router-link>
+    </nav>
+    <main>
+      <router-view></router-view>
+    </main>
   </div>
-  <HelloWorld msg="Rayane est gay" />
 </template>
 
 <style scoped>
@@ -26,5 +26,39 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+ .app {
+   min-height: 100vh;
+ }
+
+.navbar {
+  background-color: #2c3e50;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: #34495e;
+}
+
+.nav-link.router-link-active {
+  background-color: #42b983;
+}
+
+.main {
+  padding: 20px;
 }
 </style>
