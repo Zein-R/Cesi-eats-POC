@@ -2,16 +2,17 @@
 </script>
 
 <template>
-  <div class="app">
-    <nav class="navbar">
+  <div class="app bg-white">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="navbar">
+        <img src="./assets/cesi-eats-logo.jpg" class="h-10">
+        <router-link to="/" class="nav-link">Accueil</router-link>
+        <router-link to="/restaurants" class="nav-link">Restaurants</router-link>
+        <router-link to="/cart" class="nav-link">Panier</router-link>
+        <router-link to="/login" class="nav-link">Se connecter</router-link>
 
-      <h1>CESI Eats</h1>
-      <router-link to="/" class="nav-link">Accueil</router-link>
-      <router-link to="/restaurants" class="nav-link">Restaurants</router-link>
-      <router-link to="/cart" class="nav-link">Panier</router-link>
-      <router-link to="/login" class="nav-link">Se connecter</router-link>
-
-    </nav>
+      </div>
+    </div>
     <main>
       <router-view></router-view>
     </main>
