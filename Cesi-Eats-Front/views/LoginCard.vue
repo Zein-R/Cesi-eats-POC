@@ -9,16 +9,16 @@
 
       <div>
         <label for="email1" class="text-surface-900 dark:text-surface-0 font-medium mb-2 block">Adresse email</label>
-        <InputText id="email1" type="text" placeholder="Adresse email" class="w-full mb-4 m-1 " />
+        <div class="border-3 rounded-2xl border-orange-500"><InputText id="email1" type="text" placeholder="Adresse email" class="w-full mb-4 m-1 " /></div>
 
         <label for="password1" class="text-surface-900 dark:text-surface-0 font-medium mb-2 block">Mot de passe</label>
-        <InputText id="password1" type="password" placeholder="Mot de passe" class="  w-full mb-4 m-1   " />
+        <div class="border-3 rounded-2xl border-orange-500"><InputText id="password1" type="password" placeholder="Mot de passe" class="w-full mb-4 m-1"/></div>
 
         <div class="flex items-center justify-between mb-12">
-          <a class="font-medium no-underline ml-2 text-primary text-right cursor-pointer border-orange-500">Forgot password?</a>
+          <a class="font-weight no-underline ml-2 text-primary cursor-pointer ">Mot de passe oublié ?</a>
         </div>
 
-        <router-link label="Sign In" icon="pi pi-user !text-xl !leading-none" class="nav-link w-full nav-link ml-auto" to="/sign"> Sign In</router-link>
+        <router-link label="Sign In" icon="pi pi-user !text-xl !leading-none " class="nav-link w-full nav-link ml-auto" to="/sign"> Se connecter</router-link>
       </div>
     </div>
   </div>
