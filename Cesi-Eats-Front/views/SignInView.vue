@@ -1,10 +1,9 @@
 <script setup lang="ts">
 
-import LoginCard from "./LoginCard.vue";
 </script>
 
 <template>
-  <login-card></login-card>
+<p>Sign in</p>
 </template>
 
 <style scoped>
