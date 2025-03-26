@@ -48,23 +48,6 @@ h1 {
   gap: 2rem;
 }
 
-.nav-link {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  cursor: pointer;
-}
-
-.nav-link:hover {
-  background-color: #34495e;
-}
-
-.nav-link.router-link-active {
-  background-color: #FA8231;
-}
 
 
 

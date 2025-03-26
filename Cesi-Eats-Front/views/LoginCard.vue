@@ -17,12 +17,18 @@
         </div>
 
       </div>
-      <div class="text-right mt-4 ">
-        <router-link label="Sign In" icon="pi pi-user !text-xl !leading-none justify text-align-right" class="nav-link w-full nav-link ml-auto" to="/sign"> Se connecter</router-link><br>
+      <div class="text-right mt-4">
+        <button class="font-medium no-underline ml-2 text-primary cursor-pointer button-cesieats">Se connecter</button>
       </div>
       <div class="flex justify-center">
+        <div class="flex-row justify-between">
+        <div>
         <span class="text-black dark:text-surface-200 font-medium leading-normal">Pas encore inscrit ?</span>
-        <a class="font-medium no-underline ml-2 text-primary cursor-pointer">S'inscrire</a>
+        </div>
+      <div class="p-3">
+        <router-link label="Sign In" icon="pi pi-user !text-xl !leading-none" class="nav-link w-full nav-link ml-auto nav-link router-link-active justify-center" to="/sign"> S'inscrire</router-link>
+      </div>
+        </div>
       </div>
 
 
