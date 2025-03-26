@@ -85,3 +85,10 @@ button:focus-visible {
 .bronze-cesieats {
   color: #FA8231
 }
+
+
+.button-cesieats {
+  background-color: #f97316; /* Tailwind's orange-400 color */
+  color: white;
+  border-radius: 25px;
+}
