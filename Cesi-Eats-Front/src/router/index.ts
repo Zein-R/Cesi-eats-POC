@@ -21,7 +21,7 @@ const router = createRouter({
         {
             path: '/cart',
             name: 'cart',
-            component: CartView
+            component: CartView,
         },
         {
             path: '/login',
@@ -30,9 +30,9 @@ const router = createRouter({
         },
 
         {
-            path: '/signin',
-            name: 'signin',
-            component: SignInView
+            path: '/sign',
+            name: 'sign',
+            component: SignInView,
         }
     ]
 })

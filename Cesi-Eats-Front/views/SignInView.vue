@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<p>Sign in</p>
+<h1>Sign IN</h1>
 </template>
 
 <style scoped>
