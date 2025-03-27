@@ -4,7 +4,7 @@
 <template>
   <div class="app bg-white">
     <div class="d-flex justify-content-between align-items-center">
-      <div class="navbar">
+      <div class="navbar shadow-xl">
         <img src="./assets/cesi-eats-logo.jpg" class="h-10">
         <router-link to="/" class="nav-link">Accueil</router-link>
         <router-link to="/restaurants" class="nav-link">Restaurants</router-link>
