@@ -10,7 +10,7 @@
         <div class=" text-black border-3 rounded-2xl border-orange-500"><InputText id="email1" type="text" placeholder="xyz@example.com" class="w-full m-1 opacity-25 mb-2 ml-3" /></div>
 
         <label for="password1" class="text-black dark:text-surface-0 font-medium block ml-1.5 pt-2 mb-1">Mot de passe</label>
-        <div class="text-black border-3 rounded-2xl border-orange-500"><InputText id="password1" type="password" placeholder="Mot de passe" class="w-full m-1 opacity-25 mb-2  ml-3"/></div>
+        <div class="text-black border-3 rounded-2xl border-orange-500"><InputText id="password1" type="password" placeholder="••••••••" class="w-full m-1 opacity-25 mb-2  ml-3"/></div>
 
         <div class=" underline text-orange-500 justify-between mt-3 mb-6">
           <a class="font-weight no-underline ml-2 text-primary cursor-pointer mb-2">Mot de passe oublié ?</a>

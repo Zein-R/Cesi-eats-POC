@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import LoginCard from "../src/components/LoginCard.vue";
+import LoginCard from '../src/components/LoginCard.vue';
 </script>
 
 <template>
