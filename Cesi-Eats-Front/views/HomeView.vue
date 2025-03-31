@@ -9,8 +9,8 @@ import InputText from "primevue/inputtext";
     <div class="text-black w-full p-2">
       <h1 class="font-bold">Bienvenue sur <span class="bronze-cesieats">CESI Eats</span></h1>
       <div class="pl-1 opacity-50">Mangez ce que vous voulez (tout en restant en pyjama) !</div>
-      <div class="flex justify-center">
-        <div class="mt-3 p-2 text-black border-3 rounded-4xl border-orange-500 inline-flex justify-center">
+      <div class="flex justify-center mt-13">
+        <div class="mt-3 p-2  text-black border-3 rounded-4xl border-orange-500 inline-flex justify-center">
         <span class="self-center ml-4 mr-4">
           <InputText id="adress" type="text" placeholder="Entrez votre adresse..." class="w-full m-1 bronze-cesieats placeholder-cesieats"/>
         </span>
