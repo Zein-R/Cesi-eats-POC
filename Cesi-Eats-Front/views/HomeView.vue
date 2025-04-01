@@ -1,6 +1,14 @@
 <script setup lang="ts">
-
 import InputText from "primevue/inputtext";
+import 'vue3-carousel/carousel.css';
+
+const images = Array.from({ length: 10 }, (_, index) => ({
+  id: index + 1,
+  url: `https://picsum.photos/seed/${Math.random()}/800/600`,
+}));
+
+// Duplicate images to allow a seamless infinite scroll
+const duplicatedImages = [...images, ...images];
 </script>
 
 <template>
@@ -9,14 +17,22 @@ import InputText from "primevue/inputtext";
     <div class="text-black w-full p-2">
       <h1 class="font-bold">Bienvenue sur <span class="bronze-cesieats">CESI Eats</span></h1>
       <div class="pl-1 opacity-50">Mangez ce que vous voulez (tout en restant en pyjama) !</div>
-      <div class="flex justify-center mt-13">
-        <div class="mt-3 p-2  text-black border-3 rounded-4xl border-orange-500 inline-flex justify-center">
-        <span class="self-center ml-4 mr-4">
-          <InputText id="adress" type="text" placeholder="Entrez votre adresse..." class="w-full m-1 bronze-cesieats placeholder-cesieats"/>
-        </span>
+      <div class="flex justify-center">
+        <div class="mt-3 p-2 text-black border-3 rounded-4xl border-orange-500 inline-flex justify-center">
+          <span class="self-center ml-4 mr-4">
+            <InputText id="adress" type="text" placeholder="Entrez votre adresse..." class="w-full m-1 bronze-cesieats placeholder-cesieats"/>
+          </span>
           <span>
-          <button class="bg-orange-400 button-cesieats">Rechercher</button>
-        </span>
+            <button class="bg-orange-400 button-cesieats">Rechercher</button>
+          </span>
+        </div>
+      </div>
+
+      <div class="carousel-container mt-20">
+        <div class="carousel-track">
+          <div v-for="image in duplicatedImages" :key="image.id" class="carousel-item">
+            <img class="carousel-img" :src="image.url" alt="image" />
+          </div>
         </div>
       </div>
 
@@ -61,11 +77,48 @@ import InputText from "primevue/inputtext";
 </template>
 
 <style scoped>
-
 .placeholder-cesieats::placeholder {
   color: #FA8231;
   opacity: 75%;
   font-weight: bold;
 }
 
+:root {
+  background-color: #242424;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: 200%; /* Double width to accommodate duplicated images */
+  animation: scroll 10s linear infinite;
+}
+
+/* Ensure each image takes exactly 10% of the track's width (since we have 10 unique images) */
+.carousel-item {
+  flex: 0 0 10%; /* 100% / 10 images = 10% each */
+}
+
+/* Ensures images fill their container */
+carousel-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Keyframes for infinite smooth scrolling */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%); /* Moves exactly one full set of images */
+  }
+}
 </style>
